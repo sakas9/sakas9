@@ -1372,6 +1372,53 @@ button:hover, .btn:hover {
   }
 }
 
+/* Header styling */
+#header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+#header .logo {
+    height: 50px;
+}
+
+#header .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+#header .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#header .nav-links a:hover {
+    color: #007bff;
+}
+
+#header .social-links {
+    display: flex;
+    gap: 10px;
+}
+
+#header .social-links .social-icon {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+#header .social-links .social-icon:hover {
+    color: #007bff;
+}
+
+
 /* Apply Freestyle Script globally */
 body, h1, h2, h3, h4, h5, h6, p, a {
   font-family: "Freestyle Script", cursive;
