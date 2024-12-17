@@ -157,16 +157,6 @@ h6 {
   border-right: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-@font-face {
-  font-family: "Freestyle Script";
-  src: url("assets/fonts/FreestyleScript.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
-
-
 .header .profile-img img {
   margin: 15px auto;
   display: block;
@@ -1394,4 +1384,32 @@ a:hover, button:hover, input[type="submit"]:hover, input[type="button"]:hover {
   color: yellow !important;
   background-color: red;
   border-color: yellow;
+}
+
+#about {
+    margin-top: 85px;
+    margin-bottom: -92px;
+}
+
+#resume {
+    margin-top: 18px;
+    margin-bottom: -10px;
+}
+
+#portfolio {
+    margin-top: 25px;
+    margin-bottom: -90px;
+}
+
+.dark-mode {
+    color: #fff !important;
+    background-color: #808080 !important;
+}
+
+.dark-mode a, .dark-mode button {
+    color: #fff !important;
+}
+
+.dark-mode section {
+    background-color: #808080 !important;
 }
