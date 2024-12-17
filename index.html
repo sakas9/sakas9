@@ -843,6 +843,23 @@ Mokslas dar niekada neatrode toks įdomus, svarbu įžvelkti stebūklą paprastu
   <script src="assets/js/main.js"></script>
 
 <script src="assets/js/functions.js"></script>
+
+<!-- Animated SVG Button -->
+<section id="resume">
+  <div class="svg-button" style="text-align: center; margin: 2rem 0;">
+    <svg width="200" height="80" viewBox="0 0 200 80" xmlns="http://www.w3.org/2000/svg" class="spustelk-button">
+      <!-- Rectangular Frame -->
+      <rect x="5" y="5" width="190" height="70" rx="15" ry="15"
+        fill="none" stroke="#0078FF" stroke-width="4" stroke-dasharray="400" stroke-dashoffset="400">
+        <animate attributeName="stroke-dashoffset" to="0" dur="2s" repeatCount="indefinite" />
+      </rect>
+      <!-- Button Text -->
+      <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Arial, sans-serif" font-size="20" fill="#0078FF">Spustelk</text>
+    </svg>
+  </div>
+</section>
+
 </body>
 
 </html>
