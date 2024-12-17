@@ -624,27 +624,32 @@ section,
 .about .content h2 {
   font-weight: 700;
   font-size: 24px;
+  background-color: yellow;
 }
 
 .about .content ul {
   list-style: none;
   padding: 0;
+  background-color: green;
 }
 
 .about .content ul li {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  background-color: red;
 }
 
 .about .content ul strong {
   margin-right: 10px;
+  background-color: blue;
 }
 
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
   color: var(--accent-color);
+  background-color: yellow;
   line-height: 0;
 }
 
