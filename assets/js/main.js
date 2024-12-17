@@ -227,3 +227,7 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+// Redirect on SVG Button Click
+document.querySelector(".spustelk-button").addEventListener("click", function() {
+  window.location.href = "https://youtu.be/iZF9zkWIT0Q?si=2nAx7vp8YMOyd_8i";
+});
