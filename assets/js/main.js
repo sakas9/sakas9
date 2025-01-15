@@ -228,6 +228,50 @@
 
 })();
 // Redirect on SVG Button Click
-document.querySelector(".spustelk-button").addEventListener("click", function() {
-  window.location.href = "https://youtu.be/iZF9zkWIT0Q?si=2nAx7vp8YMOyd_8i";
+// JavaScript logic for the updated contact form
+
+document.getElementById("submit-btn").addEventListener("click", function () {
+  // Collect form data
+  const formData = {
+    firstName: document.getElementById("first-name").value,
+    lastName: document.getElementById("last-name").value,
+    email: document.getElementById("email").value,
+    phone: document.getElementById("phone").value,
+    address: document.getElementById("address").value,
+    services: parseInt(document.getElementById("services").value),
+    urgency: parseInt(document.getElementById("urgency").value),
+    budget: parseInt(document.getElementById("budget").value),
+    professional: parseInt(document.getElementById("professional").value),
+    impression: parseInt(document.getElementById("impression").value),
+  };
+
+  // Calculate average of dropdown answers
+  const averageRating = (
+    (formData.services +
+      formData.urgency +
+      formData.budget +
+      formData.professional +
+      formData.impression) /
+    5
+  ).toFixed(2);
+
+  // Output data to the console
+  console.log("Form Data:", formData);
+
+  // Display data on the webpage
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = `
+    <p><strong>Vardas:</strong> ${formData.firstName}</p>
+    <p><strong>Pavardė:</strong> ${formData.lastName}</p>
+    <p><strong>El. pašto adresas:</strong> ${formData.email}</p>
+    <p><strong>Telefono numeris:</strong> ${formData.phone}</p>
+    <p><strong>Adresas:</strong> ${formData.address}</p>
+    <p><strong>Ar jums tinka mano siūlomos paslaugos?</strong> ${formData.services}</p>
+    <p><strong>Jūsų renginio skubumas?</strong> ${formData.urgency}</p>
+    <p><strong>Kaina, kurią skirsite savam renginiui?</strong> ${formData.budget}</p>
+    <p><strong>Ar ilgai ieškote profesionalo?</strong> ${formData.professional}</p>
+    <p><strong>Koks buvo pirmas įspūdis?</strong> ${formData.impression}</p>
+    <hr />
+    <p><strong>${formData.firstName} ${formData.lastName} (${formData.email}):</strong> Vidurkis: ${averageRating}</p>
+  `;
 });
